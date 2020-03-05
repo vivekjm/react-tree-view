@@ -1,0 +1,44 @@
+body {
+    font-family: Verdana, Geneva, sans-serif;
+  }
+  
+  #amazing-tree {
+    margin-top: .5em;
+  }
+  
+  .tree__title {
+    cursor: pointer;
+    padding: .4em;
+    border-radius: 2px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .tree__item {
+    position:relative;
+  }
+  
+  .tree__item:before {
+    content: '◪';
+    position: absolute;
+    left: -12px;
+    top: 5px;
+    color: rgba(145, 187, 255, 1);
+  }
+  
+  .tree__item_collapsed:before {
+    content: '◩';
+  }
+  
+  .tree__title:hover {
+    background-color: rgba(145, 187, 255, .8);
+  }
+  
+  .tree__section .tree__section, .tree__section .tree__leaf {
+    margin-left: 1em;
+  }
+  
+  .tree__section .tree__leaf {
+    margin-left: 2em;
+  }
+  
